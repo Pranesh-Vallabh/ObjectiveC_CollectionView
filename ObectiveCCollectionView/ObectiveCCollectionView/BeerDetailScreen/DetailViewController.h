@@ -11,9 +11,11 @@
 #import "UIImageView+ImageViewCategory.h"
 
 @interface DetailViewController : UIViewController
+
 @property (weak, nonatomic) IBOutlet UILabel *name;
 @property (weak, nonatomic) IBOutlet UIImageView *beerImage;
 @property (weak, nonatomic) IBOutlet UILabel *descriptions;
 @property (weak, nonatomic) IBOutlet UILabel *tagline;
 @property (strong, nonatomic) Beer *beer;
+
 @end

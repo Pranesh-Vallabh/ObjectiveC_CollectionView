@@ -7,11 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0E15D01E2137F1650076B893 /* NetworkRepository.m in Sources */ = {isa = PBXBuildFile; fileRef = 0E45EB742136A3A5001D43F9 /* NetworkRepository.m */; };
+		0E15D02021381A7D0076B893 /* BeerListViewModelTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 0E15D01F21381A7D0076B893 /* BeerListViewModelTests.m */; };
+		0E15D022213826250076B893 /* codecov.yml in Resources */ = {isa = PBXBuildFile; fileRef = 0E15D021213826250076B893 /* codecov.yml */; };
 		0E45EB582136761A001D43F9 /* Beer.m in Sources */ = {isa = PBXBuildFile; fileRef = 0E45EB572136761A001D43F9 /* Beer.m */; };
 		0E45EB5B21367E18001D43F9 /* BeerCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 0E45EB5A21367E18001D43F9 /* BeerCollectionViewCell.m */; };
 		0E45EB6721369063001D43F9 /* UIImageView+ImageViewCategory.m in Sources */ = {isa = PBXBuildFile; fileRef = 0E45EB6621369063001D43F9 /* UIImageView+ImageViewCategory.m */; };
 		0E45EB6A213697DC001D43F9 /* DetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0E45EB69213697DC001D43F9 /* DetailViewController.m */; };
-		0E45EB752136A3A5001D43F9 /* NetworkRepository.m in Sources */ = {isa = PBXBuildFile; fileRef = 0E45EB742136A3A5001D43F9 /* NetworkRepository.m */; };
 		0E45EB782136AA31001D43F9 /* ViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 0E45EB772136AA31001D43F9 /* ViewModel.m */; };
 		0EF9131921366B800079F6A5 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 0EF9131821366B800079F6A5 /* AppDelegate.m */; };
 		0EF9131C21366B800079F6A5 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0EF9131B21366B800079F6A5 /* ViewController.m */; };
@@ -21,6 +23,9 @@
 		0EF9132721366B810079F6A5 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 0EF9132621366B810079F6A5 /* main.m */; };
 		0EF9133121366B820079F6A5 /* ObectiveCCollectionViewTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 0EF9133021366B820079F6A5 /* ObectiveCCollectionViewTests.m */; };
 		0EF9133C21366B820079F6A5 /* ObectiveCCollectionViewUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 0EF9133B21366B820079F6A5 /* ObectiveCCollectionViewUITests.m */; };
+		4464E8EE9D6201D4CB50AA3E /* libPods-ObectiveCCollectionViewUITests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 943533C8ABE0D36AB5EE4437 /* libPods-ObectiveCCollectionViewUITests.a */; };
+		A170137BF38CB0FFCB1B47E8 /* libPods-ObectiveCCollectionViewTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 891C74194A8D3BC2425B8C80 /* libPods-ObectiveCCollectionViewTests.a */; };
+		EF648C32D41970D6D452661E /* libPods-ObectiveCCollectionView.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 7D03F4FCF21421ADF8A9D30E /* libPods-ObectiveCCollectionView.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -41,6 +46,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0E15D01D2137EB0C0076B893 /* RepositoryNetworkable.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RepositoryNetworkable.h; sourceTree = "<group>"; };
+		0E15D01F21381A7D0076B893 /* BeerListViewModelTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BeerListViewModelTests.m; sourceTree = "<group>"; };
+		0E15D021213826250076B893 /* codecov.yml */ = {isa = PBXFileReference; lastKnownFileType = text; path = codecov.yml; sourceTree = "<group>"; };
 		0E45EB562136761A001D43F9 /* Beer.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Beer.h; sourceTree = "<group>"; };
 		0E45EB572136761A001D43F9 /* Beer.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Beer.m; sourceTree = "<group>"; };
 		0E45EB5921367E18001D43F9 /* BeerCollectionViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BeerCollectionViewCell.h; sourceTree = "<group>"; };
@@ -70,6 +78,15 @@
 		0EF9133721366B820079F6A5 /* ObectiveCCollectionViewUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ObectiveCCollectionViewUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		0EF9133B21366B820079F6A5 /* ObectiveCCollectionViewUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ObectiveCCollectionViewUITests.m; sourceTree = "<group>"; };
 		0EF9133D21366B820079F6A5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2414E62CC85390C8DB602A76 /* Pods-ObectiveCCollectionViewTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ObectiveCCollectionViewTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ObectiveCCollectionViewTests/Pods-ObectiveCCollectionViewTests.debug.xcconfig"; sourceTree = "<group>"; };
+		4B463ACCD6C1DC2FD8718C57 /* Pods-ObectiveCCollectionViewUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ObectiveCCollectionViewUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-ObectiveCCollectionViewUITests/Pods-ObectiveCCollectionViewUITests.release.xcconfig"; sourceTree = "<group>"; };
+		74E8C0B5FA012ACA3861F941 /* Pods-ObectiveCCollectionView.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ObectiveCCollectionView.release.xcconfig"; path = "Pods/Target Support Files/Pods-ObectiveCCollectionView/Pods-ObectiveCCollectionView.release.xcconfig"; sourceTree = "<group>"; };
+		7A651C00A780EAE7D9B8F17B /* Pods-ObectiveCCollectionViewTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ObectiveCCollectionViewTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-ObectiveCCollectionViewTests/Pods-ObectiveCCollectionViewTests.release.xcconfig"; sourceTree = "<group>"; };
+		7D03F4FCF21421ADF8A9D30E /* libPods-ObectiveCCollectionView.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-ObectiveCCollectionView.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		891C74194A8D3BC2425B8C80 /* libPods-ObectiveCCollectionViewTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-ObectiveCCollectionViewTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		943533C8ABE0D36AB5EE4437 /* libPods-ObectiveCCollectionViewUITests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-ObectiveCCollectionViewUITests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		D9CAB8936052ECC55C31FF6A /* Pods-ObectiveCCollectionViewUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ObectiveCCollectionViewUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ObectiveCCollectionViewUITests/Pods-ObectiveCCollectionViewUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		E6467E1A3E02EDC0AAA0607F /* Pods-ObectiveCCollectionView.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ObectiveCCollectionView.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ObectiveCCollectionView/Pods-ObectiveCCollectionView.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,6 +94,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EF648C32D41970D6D452661E /* libPods-ObectiveCCollectionView.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -84,6 +102,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A170137BF38CB0FFCB1B47E8 /* libPods-ObectiveCCollectionViewTests.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -91,6 +110,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4464E8EE9D6201D4CB50AA3E /* libPods-ObectiveCCollectionViewUITests.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -159,6 +179,7 @@
 			children = (
 				0E45EB732136A3A5001D43F9 /* NetworkRepository.h */,
 				0E45EB742136A3A5001D43F9 /* NetworkRepository.m */,
+				0E15D01D2137EB0C0076B893 /* RepositoryNetworkable.h */,
 			);
 			path = Repository;
 			sourceTree = "<group>";
@@ -175,10 +196,13 @@
 		0EF9130B21366B800079F6A5 = {
 			isa = PBXGroup;
 			children = (
+				0E15D021213826250076B893 /* codecov.yml */,
 				0EF9131621366B800079F6A5 /* ObectiveCCollectionView */,
 				0EF9132F21366B820079F6A5 /* ObectiveCCollectionViewTests */,
 				0EF9133A21366B820079F6A5 /* ObectiveCCollectionViewUITests */,
 				0EF9131521366B800079F6A5 /* Products */,
+				0F9140943FD2771307EE7079 /* Pods */,
+				3E5D5BD6808FD365183AFB21 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -215,6 +239,7 @@
 			children = (
 				0EF9133021366B820079F6A5 /* ObectiveCCollectionViewTests.m */,
 				0EF9133221366B820079F6A5 /* Info.plist */,
+				0E15D01F21381A7D0076B893 /* BeerListViewModelTests.m */,
 			);
 			path = ObectiveCCollectionViewTests;
 			sourceTree = "<group>";
@@ -228,6 +253,29 @@
 			path = ObectiveCCollectionViewUITests;
 			sourceTree = "<group>";
 		};
+		0F9140943FD2771307EE7079 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				E6467E1A3E02EDC0AAA0607F /* Pods-ObectiveCCollectionView.debug.xcconfig */,
+				74E8C0B5FA012ACA3861F941 /* Pods-ObectiveCCollectionView.release.xcconfig */,
+				2414E62CC85390C8DB602A76 /* Pods-ObectiveCCollectionViewTests.debug.xcconfig */,
+				7A651C00A780EAE7D9B8F17B /* Pods-ObectiveCCollectionViewTests.release.xcconfig */,
+				D9CAB8936052ECC55C31FF6A /* Pods-ObectiveCCollectionViewUITests.debug.xcconfig */,
+				4B463ACCD6C1DC2FD8718C57 /* Pods-ObectiveCCollectionViewUITests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		3E5D5BD6808FD365183AFB21 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				7D03F4FCF21421ADF8A9D30E /* libPods-ObectiveCCollectionView.a */,
+				891C74194A8D3BC2425B8C80 /* libPods-ObectiveCCollectionViewTests.a */,
+				943533C8ABE0D36AB5EE4437 /* libPods-ObectiveCCollectionViewUITests.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -235,6 +283,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 0EF9134021366B820079F6A5 /* Build configuration list for PBXNativeTarget "ObectiveCCollectionView" */;
 			buildPhases = (
+				E237CBD89BFA1C8F12D55FE5 /* [CP] Check Pods Manifest.lock */,
 				0EF9131021366B800079F6A5 /* Sources */,
 				0EF9131121366B800079F6A5 /* Frameworks */,
 				0EF9131221366B800079F6A5 /* Resources */,
@@ -252,6 +301,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 0EF9134321366B820079F6A5 /* Build configuration list for PBXNativeTarget "ObectiveCCollectionViewTests" */;
 			buildPhases = (
+				31596486173C4BBC03A0DDF7 /* [CP] Check Pods Manifest.lock */,
 				0EF9132821366B820079F6A5 /* Sources */,
 				0EF9132921366B820079F6A5 /* Frameworks */,
 				0EF9132A21366B820079F6A5 /* Resources */,
@@ -270,6 +320,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 0EF9134621366B820079F6A5 /* Build configuration list for PBXNativeTarget "ObectiveCCollectionViewUITests" */;
 			buildPhases = (
+				893E92AD5B349BD9DC31937C /* [CP] Check Pods Manifest.lock */,
 				0EF9133321366B820079F6A5 /* Sources */,
 				0EF9133421366B820079F6A5 /* Frameworks */,
 				0EF9133521366B820079F6A5 /* Resources */,
@@ -333,6 +384,7 @@
 			files = (
 				0EF9132421366B810079F6A5 /* LaunchScreen.storyboard in Resources */,
 				0EF9132121366B810079F6A5 /* Assets.xcassets in Resources */,
+				0E15D022213826250076B893 /* codecov.yml in Resources */,
 				0EF9131F21366B800079F6A5 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -353,12 +405,69 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		31596486173C4BBC03A0DDF7 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-ObectiveCCollectionViewTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		893E92AD5B349BD9DC31937C /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-ObectiveCCollectionViewUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E237CBD89BFA1C8F12D55FE5 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-ObectiveCCollectionView-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		0EF9131021366B800079F6A5 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0E45EB752136A3A5001D43F9 /* NetworkRepository.m in Sources */,
+				0E15D01E2137F1650076B893 /* NetworkRepository.m in Sources */,
 				0EF9131C21366B800079F6A5 /* ViewController.m in Sources */,
 				0E45EB6721369063001D43F9 /* UIImageView+ImageViewCategory.m in Sources */,
 				0EF9132721366B810079F6A5 /* main.m in Sources */,
@@ -374,6 +483,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0E15D02021381A7D0076B893 /* BeerListViewModelTests.m in Sources */,
 				0EF9133121366B820079F6A5 /* ObectiveCCollectionViewTests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -533,6 +643,7 @@
 		};
 		0EF9134121366B820079F6A5 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E6467E1A3E02EDC0AAA0607F /* Pods-ObectiveCCollectionView.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -549,6 +660,7 @@
 		};
 		0EF9134221366B820079F6A5 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 74E8C0B5FA012ACA3861F941 /* Pods-ObectiveCCollectionView.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -565,6 +677,7 @@
 		};
 		0EF9134421366B820079F6A5 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2414E62CC85390C8DB602A76 /* Pods-ObectiveCCollectionViewTests.debug.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
@@ -583,6 +696,7 @@
 		};
 		0EF9134521366B820079F6A5 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7A651C00A780EAE7D9B8F17B /* Pods-ObectiveCCollectionViewTests.release.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
@@ -601,6 +715,7 @@
 		};
 		0EF9134721366B820079F6A5 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D9CAB8936052ECC55C31FF6A /* Pods-ObectiveCCollectionViewUITests.debug.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = ObectiveCCollectionViewUITests/Info.plist;
@@ -618,6 +733,7 @@
 		};
 		0EF9134821366B820079F6A5 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4B463ACCD6C1DC2FD8718C57 /* Pods-ObectiveCCollectionViewUITests.release.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = ObectiveCCollectionViewUITests/Info.plist;

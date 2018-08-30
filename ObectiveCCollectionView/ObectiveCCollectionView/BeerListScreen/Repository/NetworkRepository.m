@@ -12,25 +12,12 @@
 -(void) fetchData: (NetworkCompletionBlock) completionBlock {
     
     NSString *urlString = @"https://api.punkapi.com/v2/beers";
-    NSURL *url = [NSURL URLWithString:urlString];
     
-    [[NSURLSession.sharedSession dataTaskWithURL:url completionHandler:^(NSData * _Nullable data, NSURLResponse * _Nullable response, NSError * _Nullable error) {
-        
-        if(error) {
-            completionBlock(nil, error);
-            return;
-        }
-       
-        NSError *jsonError;
-        NSArray *beerJSON = [NSJSONSerialization JSONObjectWithData:data options:NSJSONReadingAllowFragments error: &jsonError];
-        if(jsonError) {
-            NSLog(@"Failed to serialized into JSON: %@", jsonError);
-            completionBlock(nil, jsonError);
-            return;
-        }
-        
+    AFHTTPSessionManager *manager = [AFHTTPSessionManager manager];
+    [manager GET: urlString parameters: nil progress: nil success:^(NSURLSessionDataTask * _Nonnull task, id  _Nullable responseObject) {
+        NSLog(@"JSON %@",responseObject);
         NSMutableArray<Beer*> *beers = NSMutableArray.new;
-        for(NSDictionary *beerDictionary in beerJSON) {
+        for(NSDictionary *beerDictionary in responseObject) {
             Beer *beer = Beer.new;
             NSString *name = beerDictionary[@"name"];
             NSString *tagline = beerDictionary[@"tagline"];
@@ -43,9 +30,11 @@
             beer.imageUrl = imageUrl;
             [beers addObject: beer];
         }
-        
-        completionBlock(beers, nil);
-        
-    }] resume];
+        completionBlock(beers,nil);
+    }
+    failure:^(NSURLSessionDataTask * _Nullable task, NSError * _Nonnull error) {
+        NSLog(@"Error : %@", error);
+        completionBlock(nil,error);
+    }];
 }
 @end

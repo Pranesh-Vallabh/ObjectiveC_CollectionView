@@ -7,14 +7,14 @@
 //
 
 #import <Foundation/Foundation.h>
-#include "NetworkRepository.h"
-#include "BeerListViewable.h"
-@class ViewController;
+#import "RepositoryNetworkable.h"
+#import "BeerListViewable.h"
 
 @interface ViewModel : NSObject
 
-@property (weak, nonatomic) ViewController *viewController;
--(instancetype) initViewModel: (ViewController *) viewControllers;
+@property (weak, nonatomic) id<BeerListViewable> beerListView;
+@property id<RepositoryNetworkable> networkRepository;
+-(instancetype) initViewModel: (id<BeerListViewable>) beerListView withNetworkRepository: (id<RepositoryNetworkable>) networkRepository;
 -(void) getBeerData;
 
 @end

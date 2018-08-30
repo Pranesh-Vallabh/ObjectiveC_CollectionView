@@ -7,10 +7,9 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "RepositoryNetworkable.h"
 #import "Beer.h"
+#import "AFNetworking.h"
 
-typedef void (^NetworkCompletionBlock)(NSMutableArray<Beer *> *, NSError *);
-
-@interface NetworkRepository : NSObject
--(void) fetchData: (NetworkCompletionBlock) completionBlock;
+@interface NetworkRepository : NSObject<RepositoryNetworkable>
 @end

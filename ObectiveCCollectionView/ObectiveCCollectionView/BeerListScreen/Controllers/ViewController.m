@@ -23,7 +23,9 @@ NSString *cellId = @"cellId";
     [super viewDidLoad];
     self.navigationItem.title = @"Beers List";
     self.navigationController.navigationBar.prefersLargeTitles = TRUE;
-    viewModel = [[ViewModel alloc] initViewModel: self];
+    
+    NetworkRepository *networkRepository = [[NetworkRepository alloc] init];
+    viewModel = [[ViewModel alloc] initViewModel: self withNetworkRepository: networkRepository];
     [self getBeerData];
 }
 
@@ -51,7 +53,6 @@ NSString *cellId = @"cellId";
 
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
     if([segue.identifier isEqualToString:@"showDetails"]) {
-        
         NSArray *indexPaths = [self.collectionView indexPathsForSelectedItems];
         DetailViewController *destViewController = segue.destinationViewController;
         NSIndexPath *indexPath = [indexPaths objectAtIndex: 0];
@@ -60,11 +61,7 @@ NSString *cellId = @"cellId";
 }
 
 - (CGSize)collectionView:(UICollectionView *)collectionView layout:(UICollectionViewLayout *)collectionViewLayout sizeForItemAtIndexPath:(NSIndexPath *)indexPath {
-    return CGSizeMake(self.view.frame.size.width/2 - 60, self.view.frame.size.height/3);
-}
-
-- (CGFloat)collectionView:(UICollectionView *)collectionView layout:(UICollectionViewLayout *)collectionViewLayout minimumLineSpacingForSectionAtIndex:(NSInteger)section {
-    return 0;
+    return CGSizeMake(self.view.frame.size.width/2 - 10, self.view.frame.size.height/3);
 }
 
 @end

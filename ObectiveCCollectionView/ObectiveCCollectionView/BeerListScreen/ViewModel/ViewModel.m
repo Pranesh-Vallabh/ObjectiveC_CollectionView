@@ -7,32 +7,30 @@
 //
 
 #import "ViewModel.h"
-#import "ViewController.h"
+
 @implementation ViewModel
 
-@synthesize viewController;
+@synthesize beerListView;
 
--(instancetype) initViewModel: (ViewController *) viewControllers {
+-(instancetype) initViewModel: (id<BeerListViewable>) beerListView withNetworkRepository: (id<RepositoryNetworkable>) networkRepository {
     self = [super init];
     if (self) {
-        self.viewController = viewControllers;
+        self.beerListView = beerListView;
+        self.networkRepository = networkRepository;
     }
     return self;
 }
 
 -(void) getBeerData {
-    NetworkRepository *networkRepository = [[NetworkRepository alloc] init];
-     [networkRepository fetchData: ^(NSMutableArray<Beer *> * beers, NSError * error) {
+    [self.networkRepository fetchData: ^(NSMutableArray<Beer *> * beers, NSError * error) {
          dispatch_async(dispatch_get_main_queue(), ^{
              if(error){
-                 [self.viewController showErrorMessage: error.localizedDescription];
-                 return;
+                 [self->beerListView showErrorMessage: error.localizedDescription];
              }
              else if(beers) {
-                 [self.viewController showBeerList:beers];
-                 return;
+                 [self.beerListView showBeerList:beers];
              }
-         });
+        });
      }];
 }
 @end

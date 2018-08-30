@@ -11,7 +11,6 @@
 @implementation UIImageView (ImageViewCategory)
 +(void) loadImageFromUrl: (NSString *) urlString completion: (CompletionBlock) completionBlock {
     
-    
     NSURL *url = [NSURL URLWithString: urlString];
     NSURLRequest *urlRequest = [NSURLRequest requestWithURL: url];
     

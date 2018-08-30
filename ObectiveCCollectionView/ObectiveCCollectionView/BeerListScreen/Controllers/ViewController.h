@@ -11,6 +11,7 @@
 #import "BeerCollectionViewCell.h"
 #import "DetailViewController.h"
 #import "BeerListViewable.h"
+#import "NetworkRepository.h"
 #import "ViewModel.h"
 
 @interface ViewController : UIViewController<UICollectionViewDelegate, UICollectionViewDataSource, UICollectionViewDelegateFlowLayout, BeerListViewable>
