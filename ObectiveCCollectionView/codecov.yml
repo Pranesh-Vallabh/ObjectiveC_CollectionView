@@ -1,1 +1,7 @@
+codecov:
+token: c7fe4a90-3688-4f14-ba69-c06d414d87d7
 
+ignore:
+- "ObectiveCCollectionView/Pods/.*"
+- "ObectiveCCollectionView/ObectiveCCollectionViewTests/.*"
+- "ObectiveCCollectionView/ObectiveCCollectionViewUITests/.*"
